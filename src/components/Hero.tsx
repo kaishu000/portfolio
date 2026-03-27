@@ -1,6 +1,7 @@
 'use client'
 import { motion } from "motion/react";
 import Slideshow from "./Slideshow";
+import ButtonBestShot from "./ButtonBestShot";
 
 
 const Hero = () => {
@@ -24,6 +25,7 @@ const Hero = () => {
                 <h3>SCROLL</h3>
                 <div className="w-px h-16 bg-neutral-200"></div>
             </motion.div>
+            <ButtonBestShot/>
         </motion.div>
     );
 }

@@ -15,7 +15,7 @@ const About = () => {
             <div className="grid justify-items-center items-center w-1/3 relative">
                 <div className="w-1/2 px-4 pt-4 bg-white shadow-lg border border-black z-20">
                     <div className="overflow-hidden relative w-full aspect-2/3 border border-black">
-                        <Image className="object-cover" src="/img/kaishu_face_filter.png" fill sizes="(max-width: 768px) 50vw, 17vw" alt="profile" />
+                        <Image className="object-cover" src="/img/profile.png" fill sizes="(max-width: 768px) 50vw, 17vw" alt="profile" />
                     </div>
                     <h4 className="text-black text-center py-4">2026.03.23</h4>
                 </div>

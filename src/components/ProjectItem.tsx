@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 interface Item {
-    title: string, description: string, video: string, github: string, index: number, build_with:string[]
+    title: string, description: string, video: string, github: string, index: number, build_with: string[]
 }
 const Project = ({ title, description, video, github, index, build_with }: Item) => {
     const img_size = 28
@@ -22,13 +22,16 @@ const Project = ({ title, description, video, github, index, build_with }: Item)
                         <h2>BUILD WITH</h2>
                         <ul className="flex gap-4">
                             {
-                                build_with.map((item, id)=>(
+                                build_with.map((item, id) => (
                                     <li key={id} className="border px-4">{item}</li>
                                 ))
                             }
                         </ul>
                     </div>
-                    <a href={github} className="shadow-lg border flex gap-4 w-fit h-fit px-8 py-2 font-bold justify-center items-center mt-4"><Image src="/img/github-mark-white.png" width={img_size} height={img_size} alt="github" />GitHub</a>
+                    {
+                        github == "" ? <div></div> :
+                            <a href={github} className="shadow-lg border flex gap-4 w-fit h-fit px-8 py-2 font-bold justify-center items-center mt-4 transition-all duration-300 hover:scale-110"><Image src="/img/github-mark-white.png" width={img_size} height={img_size} alt="github" />GitHub</a>
+                    }
                 </div>
             </div>
             {

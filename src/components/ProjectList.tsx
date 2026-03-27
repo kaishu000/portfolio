@@ -11,10 +11,17 @@ const Projects = () => {
         },
         {
             title:"RAG System",
-            description:"RAG Systemは、外部ドキュメントを取り込みベクトル検索で関連情報を抽出し、言語モデルを用いてコンテキスト付きの自然言語応答を生成するRetrieval-Augmented Generationの実装です。文書前処理や検索精度向上、会話形式のインターフェースを備え、実用的なナレッジベース構築に焦点を当てたポートフォリオ作品で、設計方針や実装・評価の概要も示しています。",
+            description:"このプロジェクトは、外部ドキュメントを取り込みベクトル検索で関連情報を抽出し、言語モデルを用いてコンテキスト付きの自然言語応答を生成するRetrieval-Augmented Generationの実装です。文書前処理や検索精度向上、会話形式のインターフェースを備え、実用的なナレッジベース構築に焦点を当てたポートフォリオ作品で、設計方針や実装・評価の概要も示しています。",
             video:"/video/rag.mp4",
             github:"https://github.com/kaishu000/rag-system",
             build_with:["Python", "LangChain", "Chroma DB", "SQLite"]
+        },
+        {
+            title:"LLM Character",
+            description:"音声認識・LLM・音声合成を組み合わせた、3Dキャラクターとリアルタイムで会話できるシステムです。Pythonサーバーが音声認識からLLMによる回答生成、音声合成までを処理し、TCP通信でUnityクライアントへ送信。Unity側ではVRoid Studioで制作したオリジナルキャラクターがuLipSyncによるリップシンクと表情制御で自然に応答します。テキストチャットではなく「動くキャラクターと話す」体験を実現することをコンセプトに、サーバー・クライアント間の通信設計からキャラクター制御まで一貫して実装しました。",
+            video:"/video/LLMCharacter.mp4",
+            github:"",
+            build_with:["Python", "Gemini API", "Unity", "VRoid Studio"]
         },
     ]
     return (
