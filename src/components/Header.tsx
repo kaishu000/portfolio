@@ -10,7 +10,7 @@ const Header = () => {
             initial={{ y: -40 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
-            className="w-full px-24 py-4 fixed flex justify-between items-center border-b z-50"
+            className="w-full px-24 py-4 fixed flex justify-between items-center border-b z-50 bg-black/40"
         >
             <Link href="#hero"><h2 className="flex gap-4 text-2xl font-bold"><Image src="/img/icon.png" width={img_size} height={img_size} alt="icon" />M.Kaishu Portfolio</h2></Link>
             <ul className="flex justify-center items-center gap-8 font-bold">

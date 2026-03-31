@@ -12,7 +12,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="w-full snap-start py-12 grid justify-items-center items-center gap-12 bg-foreground text-background"
         >
-            <h2 className="font-bold text-4xl flex justify-center items-center gap-4"><Image src="/img/icon.png" width={img_size} height={img_size} alt="icon"/>M.Kaishu Portfolio</h2>
+            <h2 className="font-bold text-4xl flex justify-center items-center gap-4"><Image src="/img/icon-black.png" width={img_size} height={img_size} alt="icon"/>M.Kaishu Portfolio</h2>
             <ul className="flex gap-24">
                 <li>Github</li>
                 <li>Instagram</li>

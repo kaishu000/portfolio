@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: "Georgia", serif;
 }
+
+.scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
