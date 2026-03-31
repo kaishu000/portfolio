@@ -17,7 +17,7 @@ const Project = ({ title, description, video, github, index, build_with }: Item)
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                     className="w-1/2 mr-8"
-                ><video src={video} loop muted autoPlay playsInline className="pr-1">sorry, this browser is unavailable.</video></motion.div> : <div></div>
+                ><video src={video} loop muted autoPlay playsInline className="border pr-1">sorry, this browser is unavailable.</video></motion.div> : <div></div>
             }
             <motion.div
                 initial={{ y: 40, opacity: 0 }}
@@ -44,7 +44,7 @@ const Project = ({ title, description, video, github, index, build_with }: Item)
                     </div>
                     {
                         github == "" ? <div></div> :
-                            <a href={github} className="shadow-lg border flex gap-4 w-fit h-fit px-8 py-2 font-bold justify-center items-center mt-4 transition-all duration-300 hover:scale-110"><Image src="/img/github-mark.png" width={img_size} height={img_size} alt="github" />GitHub</a>
+                            <a href={github} className="shadow-lg border flex gap-4 w-fit h-fit px-8 py-2 font-bold justify-center items-center mt-4 transition-all duration-300 hover:scale-110"><Image src="/img/github-mark-white.png" width={img_size} height={img_size} alt="github" />GitHub</a>
                     }
                 </div>
             </motion.div>
@@ -55,7 +55,7 @@ const Project = ({ title, description, video, github, index, build_with }: Item)
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                     className="w-1/2"
-                ><video src={video} loop muted autoPlay playsInline className="pr-1">sorry, this browser is unavailable.</video></motion.div>
+                ><video src={video} loop muted autoPlay playsInline className="border pr-1">sorry, this browser is unavailable.</video></motion.div>
             }
         </div>
     );

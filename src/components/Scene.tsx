@@ -2,6 +2,7 @@
 import { Canvas } from "@react-three/fiber";
 import { useState, useEffect } from "react";
 import { fetchProjectList, ProjectData } from "./FetchJson";
+import Particles from "./my_shape";
 
 const Scene = ({ progress }: { progress: number }) => {
     const [list, setList] = useState<ProjectData[]>([]);
@@ -13,12 +14,9 @@ const Scene = ({ progress }: { progress: number }) => {
 
     return (
         <div className="w-full h-screen fixed z-0">
-            <Canvas>
+            <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 50] }}>
                 <ambientLight intensity={10} />
-                <mesh>
-                    <boxGeometry args={[1, 1, 1]} />
-                    <meshStandardMaterial color='hotpink' />
-                </mesh>
+                <Particles page={page} pages={pages}/>
             </Canvas>
         </div>
     );

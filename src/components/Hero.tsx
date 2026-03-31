@@ -28,6 +28,7 @@ const Hero = () => {
                 <h3>SCROLL</h3>
                 <div className="w-px h-16 bg-foreground"></div>
             </motion.div>
+            <div className="absolute top-0 left-0 bg-black/20 w-full h-screen border-b"></div>
         </motion.div>
     );
 }
